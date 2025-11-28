@@ -28,6 +28,9 @@ const nextConfig = {
   experimental: {
     turbopackFileSystemCacheForDev: true,
   },
+  turbopack: {
+    root: process.env.VERCEL ? '/vercel/path0/apps/v4' : undefined,
+  },
   redirects() {
     return [
       {
